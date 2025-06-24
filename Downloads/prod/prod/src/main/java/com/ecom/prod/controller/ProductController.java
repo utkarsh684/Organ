@@ -23,7 +23,7 @@ public class ProductController {
 
     @GetMapping("/category/{categoryId}")
     public List<Product> getAllProductsByCategory(Long categoryId){
-        return productService.getProductByCategory(categoryId);
+        return productService.getProductByCategoryId(categoryId);
     }
 
 }

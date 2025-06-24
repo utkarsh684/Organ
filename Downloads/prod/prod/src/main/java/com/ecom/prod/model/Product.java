@@ -1,9 +1,9 @@
 package com.ecom.prod.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Generated;
 import lombok.NoArgsConstructor;
 
 @Entity
@@ -22,5 +22,6 @@ public class Product {
 
     @ManyToOne
     @JoinColumn(name="category_id", nullable = false)
+    @JsonIgnore
     private Category category;
 }
