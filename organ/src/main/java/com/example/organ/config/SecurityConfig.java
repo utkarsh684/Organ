@@ -1,6 +1,5 @@
 package com.example.organ.config;
 
-
 import com.example.organ.JwtAuthFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
