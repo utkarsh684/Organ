@@ -46,4 +46,9 @@ public class DonorController {
         donorService.deleteDonorById(id);
     }
 
+    @PutMapping("/{id}/put")
+    public ResponseEntity<Donor> putDonor(@PathVariable Long id,@RequestBody Donor updatedDonor){
+        return ResponseEntity.ok(donorService.putDonor(id,updatedDonor));
+    }
+
 }

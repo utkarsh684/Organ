@@ -18,6 +18,13 @@ import java.util.List;
 public class Donor extends User{
     private LocalDateTime dateOfBirth;
     private boolean isAvailable;
+    public Boolean getIsAvailable() {
+        return isAvailable;
+    }
+
+    public void setIsAvailable(Boolean isAvailable) {
+        this.isAvailable = isAvailable;
+    }
 
     @OneToMany(mappedBy = "donor",cascade= CascadeType.ALL)
     @JsonManagedReference

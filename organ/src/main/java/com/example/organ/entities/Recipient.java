@@ -19,6 +19,7 @@ public class Recipient extends User{
 
     private LocalDateTime dateOfBirth;
     private String medicalCondition;
+    private String requiredOrgan;
 
     @OneToMany(mappedBy = "recipient",cascade = CascadeType.ALL)
     @JsonManagedReference
